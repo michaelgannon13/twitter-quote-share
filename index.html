@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/menu_sideslide.css" />
+</head>
+
+<body>
+	<!-- SIDE MENU -->
+	<div class="menu-wrap">
+		<nav class="menu">
+			<h5 id="category">Categories</h5>
+			<div class="icon-list">
+
+				<a href="#">
+					<i class="fa fa-fw fa-star-o"></i>
+					<span onclick="changeMot()">Motivation</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-fw fa-bell-o"></i>
+					<span onclick="changeDis()">Discipline</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-fw fa-envelope-o"></i>
+					<span>Bounderies</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-fw fa-comment-o"></i>
+					<span>Confrontation</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-fw fa-bar-chart-o"></i>
+					<span>Detatchment</span>
+				</a>
+				<a href="#">
+					<i class="fa fa-fw fa-newspaper-o"></i>
+					<span onclick="reset()">Reset</span>
+				</a>
+
+			</div>
+		</nav>
+		<button class="close-button" id="close-button">Close Menu</button>
+	</div>
+
+	<!-- MAIN CONTENT -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<button class="menu-button" id="open-button"></button>
+				<img id="image-behind" src="img/ali.jpg">
+				<div id="content-container" class="content-wrap">
+					<h3 id="one">Just pick one</h3>
+					<blockquote>
+						<p id="quote">I am the greatest, I said that even before I knew I was.
+						</p>
+						<small id="author">Muhummad Ali</small>
+					</blockquote>
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			<h5 id="spacebar">Hit the spacebar</h5>
+			<br>
+			<svg width="100" height="18">
+				<rect width="100" height="18" style="fill: rgb(226, 226, 226);stroke-width: 3px;stroke: rgb(138, 138, 138);">
+					Sorry, your browser does not support inline SVG.
+				</rect>
+			</svg>
+			<br>
+
+			<link rel="canonical" href="https://inspiredaily.com">
+
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Cool%20Quote" data-size="large">
+				<img id="tweet" src="img/twitter.png">
+			</a>
+		</footer>
+	</div>
+	<script src="js/classie.js"></script>
+	<script src="js/sidebar.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
