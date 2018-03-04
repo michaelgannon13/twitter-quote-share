@@ -1,23 +1,12 @@
-function load() {
-	console.log("load called");
-	document.getElementById('quote').innerHTML = conor.quote;
-	document.getElementById('author').innerHTML = conor.author;
-	document.getElementById('image-behind').src = conor.authorImg;
-}
+var counter = 0;
 
-function conorQuotes() {
-	console.log("conor clicked");
-}
-
-function changeDis() {
-	console.log("kanye clicked");
-}
-
-function loadCon() {
-	for (i = 0; i < conor.length; i++) {
-		console.log(i);
-		document.getElementById('quote').innerHTML = conor[i].quote[i];
-		document.getElementById('author').innerHTML = conor[i].author[i];
-		document.getElementById('image-behind').src = conor[i].authorImg[i];
+function loadConor() {
+	if (counter !== conor.length) {
+		counter++;
+		document.getElementById('author').innerHTML = conor[counter].author;
+		document.getElementById('quote').innerHTML = conor[counter].quote;
+		document.getElementById('image-behind').src = conor[counter].authorImg;
+	} else {
+		counter = 0;
 	}
 }
