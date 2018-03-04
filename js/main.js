@@ -1,6 +1,6 @@
 var counter = 0;
 
-function loadConor() {
+function loadConor(val) {
 	if (counter !== conor.length) {
 		counter++;
 		document.getElementById('author').innerHTML = conor[counter].author;
