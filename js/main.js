@@ -1,5 +1,16 @@
 var counter = 0;
 
+window.onkeydown = function (e) {
+	if (e.keyCode === 32) {
+		e.preventDefault();
+		if (counter == currentPerson.length) {
+			counter = 0;
+		}
+		nextQuote();
+	}
+};
+
+
 function loadConor() {	
 	currentPerson = conor;
 }
