@@ -1,6 +1,8 @@
 var conorMcGregor = "Conor McGregor", 
     kanyeWest = "Kanye West";
 
+var currentPerson = [];
+
 var conor = [
     {
       author: conorMcGregor,
