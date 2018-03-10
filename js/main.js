@@ -13,6 +13,13 @@ window.onkeydown = function (e) {
 	}
 };
 
+function fadeIn() {
+	$('#image-behind').fadeTo('slow', 0.2);
+}
+
+function fadeOut() {
+	$('#image-behind').css('opacity', 0);
+}
 
 function loadConor() {
 	currentPerson = conor;
@@ -26,9 +33,11 @@ function loadKanye() {
 
 function nextQuote() {
 	if (counter !== currentPerson.length) {
+		fadeOut();		
 		document.getElementById('author').innerHTML = currentPerson[counter].author;
 		document.getElementById('quote').innerHTML = currentPerson[counter].quote;
 		document.getElementById('image-behind').src = currentPerson[counter].authorImg;
+		fadeIn();
 		counter++;
 	} else {
 		counter = 0;
