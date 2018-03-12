@@ -54,6 +54,7 @@ function nextQuote() {
 		console.log("authorHolder = " + authorHolder);
 		console.log("quoteHolder = " + quoteHolder);
 
+		
 		fadeIn();
 		counter++;
 	} else {
@@ -62,6 +63,10 @@ function nextQuote() {
 	}
 }
 
-var tweetBtn = "https://twitter.com/intent/tweet?text=" + quoteHolder + authorHolder;
-document.getElementById("tweet-btn").setAttribute("href", tweetBtn);
+buildTweetURL();
+function buildTweetURL() { 
+	var tweetBtn = "https://twitter.com/intent/tweet?text=" + quoteHolder + "%" + authorHolder;
+	document.getElementById("tweet-btn").setAttribute("href", tweetBtn);
+}
+
 
