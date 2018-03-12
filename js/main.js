@@ -1,7 +1,7 @@
-var counter,
-	authorImage = $('#image-behind'),
-	authorQuote = $('#quote'),
-	authorName = $('#author');
+var counter;
+var authorImage = $('#image-behind');
+var authorQuote = $('#quote');
+var	authorName = $('#author');
 
 function onload() {
 	counter = 0;
@@ -43,7 +43,7 @@ function nextQuote() {
 		fadeOut();		
 		authorName.text(currentPerson[counter].author);
 		authorQuote.text(currentPerson[counter].quote);
-		authorImage.attr("src",currentPerson[counter].authorImg);
+		authorImage.attr("src", currentPerson[counter].authorImg);
 		fadeIn();
 		counter++;
 	} else {
