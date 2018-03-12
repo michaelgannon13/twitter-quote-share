@@ -1,7 +1,14 @@
 var counter;
 var authorImage = $('#image-behind');
 var authorQuote = $('#quote');
-var	authorName = $('#author');
+var authorName = $('#author');
+var testString = "it works";
+var quoteHolder;
+var authorHolder;
+
+var scrt_var = "it worked";
+var strLink = "https://twitter.com/intent/tweet?text=" + scrt_var + quoteHolder + authorHolder;
+document.getElementById("tweet-btn").setAttribute("href", strLink);
 
 function onload() {
 	counter = 0;
@@ -44,6 +51,13 @@ function nextQuote() {
 		authorName.text(currentPerson[counter].author);
 		authorQuote.text(currentPerson[counter].quote);
 		authorImage.attr("src", currentPerson[counter].authorImg);
+
+		authorHolder = currentPerson[counter].author;
+		quoteHolder = currentPerson[counter].quote;
+
+		console.log("authorHolder = " + authorHolder);
+		console.log("quoteHolder = " + quoteHolder);
+
 		fadeIn();
 		counter++;
 	} else {
