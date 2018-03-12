@@ -6,14 +6,10 @@ var testString = "it works";
 var quoteHolder;
 var authorHolder;
 
-var scrt_var = "it worked";
-var strLink = "https://twitter.com/intent/tweet?text=" + scrt_var + quoteHolder + authorHolder;
-document.getElementById("tweet-btn").setAttribute("href", strLink);
-
 function onload() {
 	counter = 0;
 	currentPerson = conor;
-	nextQuote(); 
+	nextQuote();
 }
 
 window.onkeydown = function (e) {
@@ -42,12 +38,12 @@ function loadConor() {
 
 function loadKanye() {
 	currentPerson = kanye;
-	nextQuote();	
+	nextQuote();
 }
 
 function nextQuote() {
 	if (counter !== currentPerson.length) {
-		fadeOut();		
+		fadeOut();
 		authorName.text(currentPerson[counter].author);
 		authorQuote.text(currentPerson[counter].quote);
 		authorImage.attr("src", currentPerson[counter].authorImg);
@@ -65,3 +61,7 @@ function nextQuote() {
 		nextQuote();
 	}
 }
+
+var tweetBtn = "https://twitter.com/intent/tweet?text=" + quoteHolder + authorHolder;
+document.getElementById("tweet-btn").setAttribute("href", tweetBtn);
+
