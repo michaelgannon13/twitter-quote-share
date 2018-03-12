@@ -3,7 +3,7 @@ var counter;
 function onload() {
 	counter = 0;
 	currentPerson = conor;
-	nextQuote();
+	nextQuote(); 
 }
 
 window.onkeydown = function (e) {
