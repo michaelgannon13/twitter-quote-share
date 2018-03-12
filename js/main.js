@@ -1,4 +1,7 @@
-var counter;
+var counter,
+	authorImage = $('#image-behind'),
+	authorQuote = $('#quote'),
+	authorName = $('#author');
 
 function onload() {
 	counter = 0;
@@ -14,11 +17,15 @@ window.onkeydown = function (e) {
 };
 
 function fadeIn() {
-	$('#image-behind').fadeTo('slow', 0.2);
+	authorImage.fadeTo('slow', 0.2);
+	authorQuote.fadeTo('slow', 1);
+	authorName.fadeTo('slow', 1);
 }
 
 function fadeOut() {
-	$('#image-behind').css('opacity', 0);
+	authorImage.css('opacity', 0);
+	authorQuote.css('opacity', 0);
+	authorName.css('opacity', 0);
 }
 
 function loadConor() {
@@ -34,9 +41,9 @@ function loadKanye() {
 function nextQuote() {
 	if (counter !== currentPerson.length) {
 		fadeOut();		
-		document.getElementById('author').innerHTML = currentPerson[counter].author;
-		document.getElementById('quote').innerHTML = currentPerson[counter].quote;
-		document.getElementById('image-behind').src = currentPerson[counter].authorImg;
+		authorName.text(currentPerson[counter].author);
+		authorQuote.text(currentPerson[counter].quote);
+		authorImage.attr("src",currentPerson[counter].authorImg);
 		fadeIn();
 		counter++;
 	} else {
