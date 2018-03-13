@@ -5,11 +5,16 @@ var authorName = $('#author');
 var testString = "it works";
 var quoteHolder;
 var authorHolder;
+var a = document.createElement('a');
+var linkText = document.createTextNode("Tweet");
 
 function onload() {
 	counter = 0;
 	currentPerson = conor;
 	nextQuote();
+	a.appendChild(linkText);
+	a.class = "twitter-share-button";
+	document.body.appendChild(a);
 }
 
 window.onkeydown = function (e) {
@@ -41,6 +46,10 @@ function loadKanye() {
 	nextQuote();
 }
 
+function updateURL() { 
+	a.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
+}
+
 function nextQuote() {
 	if (counter !== currentPerson.length) {
 		fadeOut();
@@ -54,12 +63,7 @@ function nextQuote() {
 		console.log("authorHolder = " + authorHolder);
 		console.log("quoteHolder = " + quoteHolder);
 
-		var a = document.createElement('a');
-		var linkText = document.createTextNode("Tweet");
-		a.appendChild(linkText);
-		a.class = "twitter-share-button";
-		a.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
-		document.body.appendChild(a);
+		updateURL();
 
 		fadeIn();
 		counter++;
