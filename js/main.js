@@ -54,7 +54,13 @@ function nextQuote() {
 		console.log("authorHolder = " + authorHolder);
 		console.log("quoteHolder = " + quoteHolder);
 
-		
+		var a = document.createElement('a');
+		var linkText = document.createTextNode("Tweet");
+		a.appendChild(linkText);
+		a.class = "twitter-share-button";
+		a.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
+		document.body.appendChild(a);
+
 		fadeIn();
 		counter++;
 	} else {
@@ -63,10 +69,5 @@ function nextQuote() {
 	}
 }
 
-buildTweetURL();
-function buildTweetURL() { 
-	var tweetBtn = "https://twitter.com/intent/tweet?text=" + quoteHolder + "%" + authorHolder;
-	document.getElementById("tweet-btn").setAttribute("href", tweetBtn);
-}
 
 
