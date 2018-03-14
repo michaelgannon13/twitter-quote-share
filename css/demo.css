@@ -105,6 +105,17 @@ p#quote {
     line-height: 40px;
 }
 
+a.twitter-share-button:active {
+	background-color: #0c7abf;
+}
+
+a.twitter-share-button {
+	background-color: #1b95e0;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 4px;
+}
+
 small#author {
     font-family: baskerville-bold;
     color: #c1b497;

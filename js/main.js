@@ -5,16 +5,17 @@ var authorName = $('#author');
 var testString = "it works";
 var quoteHolder;
 var authorHolder;
-var a = document.createElement('a');
+var createTweetBtn = document.createElement('a');
+createTweetBtn.className = "twitter-share-button";
 var linkText = document.createTextNode("Tweet");
 
 function onload() {
 	counter = 0;
 	currentPerson = conor;
 	nextQuote();
-	a.appendChild(linkText);
-	a.class = "twitter-share-button";
-	document.body.appendChild(a);
+	createTweetBtn.appendChild(linkText);
+	createTweetBtn.class = "twitter-share-button";
+	document.body.appendChild(createTweetBtn);
 }
 
 window.onkeydown = function (e) {
@@ -47,7 +48,7 @@ function loadKanye() {
 }
 
 function updateURL() { 
-	a.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
+	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
 }
 
 function nextQuote() {
