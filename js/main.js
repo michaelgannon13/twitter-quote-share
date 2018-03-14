@@ -6,16 +6,15 @@ var testString = "it works";
 var quoteHolder;
 var authorHolder;
 var createTweetBtn = document.createElement('a');
-createTweetBtn.className = "twitter-share-button";
 var linkText = document.createTextNode("Tweet");
 
 function onload() {
 	counter = 0;
 	currentPerson = conor;
 	nextQuote();
+	createTweetBtn.className = "twitter-share-button";
 	createTweetBtn.appendChild(linkText);
-	createTweetBtn.class = "twitter-share-button";
-	document.body.appendChild(createTweetBtn);
+	document.getElementById("tweet-button-container").appendChild(createTweetBtn);
 }
 
 window.onkeydown = function (e) {
