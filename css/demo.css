@@ -116,7 +116,7 @@ a.twitter-share-button {
     border-radius: 4px;
 }
 
-/* a.twitter-share-button i {
+a.twitter-share-button i {
 	position: relative;
 	top: 2px;
 	display: inline-block;
@@ -124,7 +124,7 @@ a.twitter-share-button {
 	height: 14px;
 	background: transparent 0 0 no-repeat;
 	background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg…-.038-1.693%202.558-1.847%204.778-4.15%206.532-6.774z%22%2F%3E%3C%2Fsvg%3E);
-} */
+}
 
 
 small#author {

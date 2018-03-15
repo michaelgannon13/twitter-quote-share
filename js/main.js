@@ -5,7 +5,7 @@ var authorName = $('#author');
 var quoteHolder;
 var authorHolder;
 var createTweetBtn = document.createElement('a');
-// var tweetIcon = document.createElement('i');
+var tweetIcon = document.createElement('i');
 var linkText = document.createTextNode("Tweet");
 
 function onload() {
@@ -16,7 +16,7 @@ function onload() {
 	createTweetBtn.appendChild(linkText);
 	createTweetBtn.appendChild(tweetIcon);    
 	document.getElementById("tweet-button-container").appendChild(createTweetBtn);
-	// document.getElementById("tweet-button-container").appendChild(tweetIcon);
+	document.getElementById("tweet-button-container").appendChild(tweetIcon);
 }
 
 window.onkeydown = function (e) {
