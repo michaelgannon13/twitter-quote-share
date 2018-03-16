@@ -105,27 +105,21 @@ p#quote {
     line-height: 40px;
 }
 
-a.twitter-share-button:active {
+a.twitter-share-button:active, a.twitter-share-button:hover {
 	background-color: #0c7abf;
 }
 
 a.twitter-share-button {
-	background-color: #1b95e0;
     color: white;
     padding: 5px 12px;
     border-radius: 4px;
+	background-color: #1b95e0;
+	font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
+	text-transform: capitalize;
+	letter-spacing: 0px;
+	text-decoration: none;
+	font-size: 16px;
 }
-
-a.twitter-share-button i {
-	position: relative;
-	top: 2px;
-	display: inline-block;
-	width: 14px;
-	height: 14px;
-	background: transparent 0 0 no-repeat;
-	background-image: url(data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg…-.038-1.693%202.558-1.847%204.778-4.15%206.532-6.774z%22%2F%3E%3C%2Fsvg%3E);
-}
-
 
 small#author {
     font-family: baskerville-bold;
@@ -135,7 +129,6 @@ small#author {
 }
 
 a:hover, a:focus {
-	color: #c94e50;
 	outline: none;
 }
 
