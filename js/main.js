@@ -1,12 +1,22 @@
 var counter;
 var authorImage = $('#image-behind');
 var authorQuote = $('#quote');
-var	authorName = $('#author');
+var authorName = $('#author');
+var quoteHolder;
+var authorHolder;
+var createTweetBtn = document.createElement('a');
+var tweetIcon = document.createElement('i');
+var linkText = document.createTextNode("Tweet");
 
 function onload() {
 	counter = 0;
 	currentPerson = conor;
-	nextQuote(); 
+	nextQuote();
+	createTweetBtn.className = "twitter-share-button";
+	createTweetBtn.appendChild(linkText);
+	createTweetBtn.appendChild(tweetIcon);    
+	document.getElementById("tweet-button-container").appendChild(createTweetBtn);
+	document.getElementById("tweet-button-container").appendChild(tweetIcon);
 }
 
 window.onkeydown = function (e) {
@@ -35,15 +45,28 @@ function loadConor() {
 
 function loadKanye() {
 	currentPerson = kanye;
-	nextQuote();	
+	nextQuote();
+}
+
+function updateURL() { 
+	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
 }
 
 function nextQuote() {
 	if (counter !== currentPerson.length) {
-		fadeOut();		
+		fadeOut();
 		authorName.text(currentPerson[counter].author);
 		authorQuote.text(currentPerson[counter].quote);
 		authorImage.attr("src", currentPerson[counter].authorImg);
+
+		authorHolder = currentPerson[counter].author;
+		quoteHolder = currentPerson[counter].quote;
+
+		console.log("authorHolder = " + authorHolder);
+		console.log("quoteHolder = " + quoteHolder);
+
+		updateURL();
+
 		fadeIn();
 		counter++;
 	} else {
@@ -51,3 +74,6 @@ function nextQuote() {
 		nextQuote();
 	}
 }
+
+
+

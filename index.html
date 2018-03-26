@@ -5,6 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Share image in twitter card -->
+	<!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/summary-card-with-large-image -->
+
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="css/demo.css" />
@@ -24,8 +27,8 @@
 				<a href="#">
 					<i class="fa fa-fw fa-bell-o"></i>
 					<span onclick="loadKanye()">Kanye</span>
-				</a>
-				<a href="#">
+				</a><!-- test -->
+				<!-- <a href="#">
 					<i class="fa fa-fw fa-envelope-o"></i>
 					<span>Bounderies</span>
 				</a>
@@ -40,8 +43,7 @@
 				<a href="#">
 					<i class="fa fa-fw fa-newspaper-o"></i>
 					<span onclick="reset()">Reset</span>
-				</a>
-
+				</a> -->
 			</div>
 		</nav>
 		<button class="close-button" id="close-button">Close Menu</button>
@@ -71,9 +73,9 @@
 				</rect>
 			</svg>
 			<br>
-			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Cool%20Quote" data-size="large">
-				<img id="tweet" src="img/twitter.png">
-			</a>
+			<br>			
+			<div id="tweet-button-container"></div>
+			<br>
 		</footer>
 	</div>
 	<script src="js/jquery.min.js"></script>
