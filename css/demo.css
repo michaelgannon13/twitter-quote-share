@@ -107,18 +107,20 @@ p#quote {
 
 a.twitter-share-button:active, a.twitter-share-button:hover {
 	background-color: #0c7abf;
+	color: white;
 }
 
 a.twitter-share-button {
     color: white;
     padding: 5px 12px;
     border-radius: 4px;
-	background-color: #1b95e0;
+	background-color: #1c94e0;
 	font: normal normal normal 11px/18px 'Helvetica Neue',Arial,sans-serif;
 	text-transform: capitalize;
 	letter-spacing: 0px;
 	text-decoration: none;
 	font-size: 13px;
+	font-weight: 900;
 }
 
 small#author {
