@@ -74,12 +74,16 @@ var motivation = [
   var courage = [
     {
       author: "Lao Tzu",
-      quote: "'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.'",
+      quote: "'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage'",
       authorImg: "img/courage1.jpg"
     }, 
     {
       author: "Walt Disney",
-      quote: "'All our dreams can come true, if we have the courage to pursue them.'",
+      quote: "'All our dreams can come true, if we have the courage to pursue them'",
       authorImg: "img/courage2.jpg"
+    }, {
+      author: "Thucydides",
+      quote: "'The secret to happiness is freedom... And the secret to freedom is courage'",
+      authorImg: "img/courage3.jpg"
     }
   ]
