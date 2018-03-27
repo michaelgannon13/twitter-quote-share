@@ -48,6 +48,11 @@ function loadSerenity() {
 	nextQuote();
 }
 
+function loadCourage() {
+	currentPerson = courage;
+	nextQuote();
+}
+
 function updateURL() { 
 	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
 }
