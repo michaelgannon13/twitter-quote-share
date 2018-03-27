@@ -10,7 +10,7 @@ var linkText = document.createTextNode("Tweet");
 
 function onload() {
 	counter = 0;
-	currentPerson = conor;
+	currentPerson = motivation;
 	nextQuote();
 	createTweetBtn.className = "twitter-share-button";
 	createTweetBtn.appendChild(linkText);
@@ -38,13 +38,8 @@ function fadeOut() {
 	authorName.css('opacity', 0);
 }
 
-function loadConor() {
-	currentPerson = conor;
-	nextQuote();
-}
-
-function loadKanye() {
-	currentPerson = kanye;
+function loadMotivation() {
+	currentPerson = motivation;
 	nextQuote();
 }
 

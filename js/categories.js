@@ -1,6 +1,6 @@
 var currentPerson = [];
 
-var conor = [
+var motivation = [
     {
       author: "Conor McGregor", 
       quote: "'Doubt is removed by action'",
@@ -20,10 +20,12 @@ var conor = [
       author: "Conor McGregor", 
       quote: "'The more you seek the uncomfortable, the more you will become comfortable'",
       authorImg: "img/conor4.jpg"
-    }     
-  ]
-
-  var kanye = [
+    }     , 
+    {
+      author: "Buddha", 
+      quote: "'What we think, we become'",
+      authorImg: "img/buddha1.jpg"
+    },  
     {
       author: "Kanye West",
       quote: "'It's OK to be the greatest you'",
@@ -53,9 +55,9 @@ var conor = [
       authorImg: "img/serenity1.jpg"
     }, 
     {
-      author: "Buddha",
-      quote: "'Serenity comes when you trade expectations for acceptance'",
-      authorImg: "img/serenity1.jpg"
+      author: "Reinhold Niebuhr",
+      quote: "'God grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.'",
+      authorImg: "img/serenity2.jpg"
     }, 
     {
       author: "Buddha",
