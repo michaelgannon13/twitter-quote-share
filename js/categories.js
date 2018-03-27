@@ -47,7 +47,7 @@ var motivation = [
       authorImg: "img/kanye4.jpg"
     }     
   ]
-
+  
   var serenity = [
     {
       author: "Buddha",
@@ -61,7 +61,12 @@ var motivation = [
     }, 
     {
       author: "Buddha",
-      quote: "'Serenity comes when you trade expectations for acceptance'",
-      authorImg: "img/serenity1.jpg"
+      quote: "'Every morning we are born again. What we do today is what matters most'",
+      authorImg: "img/buddha3.jpg"
+    }, 
+    {
+      author: "Buddha",
+      quote: "'Conquer yourself and you'll win thousands of battles'",
+      authorImg: "img/buddha.jpg"
     } 
   ]
