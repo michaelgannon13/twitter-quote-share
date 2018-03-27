@@ -45,3 +45,21 @@ var conor = [
       authorImg: "img/kanye4.jpg"
     }     
   ]
+
+  var serenity = [
+    {
+      author: "Buddha",
+      quote: "'Serenity comes when you trade expectations for acceptance'",
+      authorImg: "img/serenity1.jpg"
+    }, 
+    {
+      author: "Buddha",
+      quote: "'Serenity comes when you trade expectations for acceptance'",
+      authorImg: "img/serenity1.jpg"
+    }, 
+    {
+      author: "Buddha",
+      quote: "'Serenity comes when you trade expectations for acceptance'",
+      authorImg: "img/serenity1.jpg"
+    } 
+  ]

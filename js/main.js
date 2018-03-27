@@ -48,6 +48,11 @@ function loadKanye() {
 	nextQuote();
 }
 
+function loadSerenity() {
+	currentPerson = serenity;
+	nextQuote();
+}
+
 function updateURL() { 
 	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
 }
