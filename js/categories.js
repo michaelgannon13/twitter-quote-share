@@ -78,18 +78,8 @@ var motivation = [
       authorImg: "img/courage1.jpg"
     }, 
     {
-      author: "Reinhold Niebuhr",
-      quote: "'God grant me the serenity to accept the things I cannot change, the courage to change the things I can, and the wisdom to know the difference.'",
-      authorImg: "img/serenity2.jpg"
-    }, 
-    {
-      author: "Buddha",
-      quote: "'Every morning we are born again. What we do today is what matters most'",
-      authorImg: "img/buddha3.jpg"
-    }, 
-    {
-      author: "Buddha",
-      quote: "'Conquer yourself and you'll win thousands of battles'",
-      authorImg: "img/buddha.jpg"
-    } 
+      author: "Walt Disney",
+      quote: "'All our dreams can come true, if we have the courage to pursue them.'",
+      authorImg: "img/courage2.jpg"
+    }
   ]
