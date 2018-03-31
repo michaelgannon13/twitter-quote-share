@@ -119,6 +119,15 @@ var motivation = [
       author: "Audrey Hepburn",
       quote: "'Nothing is impossible, the word itself says 'I'm possible!'",
       authorImg: "img/Audrey-Hepburn.jpg"
-    }, 
-
+    },
+    {
+      author: "Theodore Roosevelt",
+      quote: "'Believe you can and you're halfway there'",
+      authorImg: "img/Theodore-Roosevelt.jpg"
+    },
+    {
+      author: "Norman Vincent Peale",
+      quote: "'Change your thoughts and you change your world'",
+      authorImg: "img/Norman-Vincent-Peale.jpg"
+    }
   ]
