@@ -81,9 +81,44 @@ var motivation = [
       author: "Walt Disney",
       quote: "'All our dreams can come true, if we have the courage to pursue them'",
       authorImg: "img/courage2.jpg"
-    }, {
+    },
+    {
       author: "Thucydides",
       quote: "'The secret to happiness is freedom... And the secret to freedom is courage'",
       authorImg: "img/courage3.jpg"
+    },
+    {
+      author: "Giacomo Casanova",
+      quote: "'The one who makes no mistakes, makes nothing at all'",
+      authorImg: "img/giovanni-giacomo-casanova.jpg"
+    },
+    {
+      author: "Lao Tzu",
+      quote: "'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage'",
+      authorImg: "img/lao-tzu.jpg"
+    },
+    {
+      author: "Winston Churchill",
+      quote: "'Success is not final, failure is not fatal: it is the courage to continue that counts'",
+      authorImg: "img/winston-churchill.jpg"
     }
+  ]  
+  
+  var inspiration = [
+    {
+      author: "Swami Sivananda",
+      quote: "'Put your heart, mind, and soul into even your smallest acts. This is the secret of success'",
+      authorImg: "img/Swami-Sivananda.jpg"
+    },
+    {
+      author: "Joseph Campbell",
+      quote: "'We must let go of the life we have planned, so as to accept the one that is waiting for us'",
+      authorImg: "img/Joseph-Campbell.jpg"
+    },
+    {
+      author: "Audrey Hepburn",
+      quote: "'Nothing is impossible, the word itself says 'I'm possible!'",
+      authorImg: "img/Audrey-Hepburn.jpg"
+    }, 
+
   ]

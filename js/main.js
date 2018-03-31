@@ -53,6 +53,11 @@ function loadCourage() {
 	nextQuote();
 }
 
+function loadInspiration() {
+	currentPerson = inspiration;
+	nextQuote();
+}
+
 function updateURL() { 
 	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
 }
