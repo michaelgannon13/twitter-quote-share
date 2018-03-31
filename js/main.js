@@ -14,9 +14,7 @@ function onload() {
 	nextQuote();
 	createTweetBtn.className = "twitter-share-button";
 	createTweetBtn.appendChild(linkText);
-	createTweetBtn.appendChild(tweetIcon);    
 	document.getElementById("tweet-button-container").appendChild(createTweetBtn);
-	document.getElementById("tweet-button-container").appendChild(tweetIcon);
 }
 
 window.onkeydown = function (e) {
@@ -38,27 +36,35 @@ function fadeOut() {
 	authorName.css('opacity', 0);
 }
 
-function loadMotivation() {
-	currentPerson = motivation;
+
+
+function checkQuote(category) {
+	switch (category) {
+		case 'motivation':
+		currentPerson = [];
+		currentPerson.push(motivation);
+		console.log(currentPerson);
+		break;
+		case 'serenity':
+		currentPerson = [];		
+		currentPerson.push(serenity);		
+		console.log(currentPerson);		
+		break;	
+		case 'courage':
+		currentPerson = [];		
+		currentPerson.push(courage);	
+		console.log(currentPerson);				
+		break;	
+		case 'inspiration':
+		currentPerson = [];		
+		currentPerson.push(inspiration);
+		console.log(currentPerson);				
+		break;	
+	}
 	nextQuote();
 }
 
-function loadSerenity() {
-	currentPerson = serenity;
-	nextQuote();
-}
-
-function loadCourage() {
-	currentPerson = courage;
-	nextQuote();
-}
-
-function loadInspiration() {
-	currentPerson = inspiration;
-	nextQuote();
-}
-
-function updateURL() { 
+function updateURL() {
 	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
 }
 
