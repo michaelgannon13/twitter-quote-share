@@ -129,5 +129,10 @@ var motivation = [
       author: "Norman Vincent Peale",
       quote: "'Change your thoughts and you change your world'",
       authorImg: "img/Norman-Vincent-Peale.jpg"
+    },
+    {
+      author: "Vince Lombardi",
+      quote: "'Perfection is not attainable, but if we chase perfection we can catch excellence'",
+      authorImg: "img/Vince-Lombardi.jpg"
     }
   ]
