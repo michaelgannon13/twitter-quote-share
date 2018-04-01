@@ -73,11 +73,6 @@ var motivation = [
 
   var courage = [
     {
-      author: "Lao Tzu",
-      quote: "'Being deeply loved by someone gives you strength, while loving someone deeply gives you courage'",
-      authorImg: "img/courage1.jpg"
-    }, 
-    {
       author: "Walt Disney",
       quote: "'All our dreams can come true, if we have the courage to pursue them'",
       authorImg: "img/courage2.jpg"
@@ -134,5 +129,38 @@ var motivation = [
       author: "Vince Lombardi",
       quote: "'Perfection is not attainable, but if we chase perfection we can catch excellence'",
       authorImg: "img/Vince-Lombardi.jpg"
+    }
+  ]
+
+  var compassion = [
+    {
+      author: "Maya Angelou",
+      quote: "'My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style'",
+      authorImg: "img/Maya-Angelou.jpg"
+    },    
+    {
+      author: "Albert Schweitzer",
+      quote: "'The purpose of human life is to serve, and to show compassion and the will to help others'",
+      authorImg: "img/Albert-Schweitzer.jpg"
+    },    
+    {
+      author: "Dalai Lama",
+      quote: "'Love and compassion are necessities, not luxuries. Without them humanity cannot survive'",
+      authorImg: "img/Dalai-Lama.jpg"
+    },    
+    {
+      author: "Confucius",
+      quote: "'Wisdom, compassion, and courage are the three universally recognized moral qualities of men'",
+      authorImg: "img/Confucius.jpg"
+    },    
+    {
+      author: "Lao Tzu",
+      quote: "'I have just three things to teach: simplicity, patience, compassion. These three are your greatest treasures'",
+      authorImg: "img/lao-tzu.jpg"
+    },    
+    {
+      author: "Thich Nhat Hanh",
+      quote: "'Let us fill our hearts with our own compassion - towards ourselves and towards all living beings'",
+      authorImg: "img/Thich-Nhat-Hanh.jpg"
     }
   ]
