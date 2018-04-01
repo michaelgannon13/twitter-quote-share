@@ -58,6 +58,12 @@ function loadInspiration() {
 	nextQuote();
 }
 
+function loadCompassion() {
+	currentPerson = compassion;
+	nextQuote();
+}
+
+
 function updateURL() { 
 	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
 }
