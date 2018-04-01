@@ -26,6 +26,10 @@ window.onkeydown = function (e) {
 	}
 };
 
+function resetCounter() {
+	counter = 0;
+}
+
 function fadeIn() {
 	authorImage.fadeTo('slow', 0.2);
 	authorQuote.fadeTo('slow', 1);
@@ -40,26 +44,31 @@ function fadeOut() {
 
 function loadMotivation() {
 	currentPerson = motivation;
+	resetCounter();
 	nextQuote();
 }
 
 function loadSerenity() {
 	currentPerson = serenity;
+	resetCounter();	
 	nextQuote();
 }
 
 function loadCourage() {
 	currentPerson = courage;
+	resetCounter();	
 	nextQuote();
 }
 
 function loadInspiration() {
 	currentPerson = inspiration;
+	resetCounter();	
 	nextQuote();
 }
 
 function loadCompassion() {
 	currentPerson = compassion;
+	resetCounter();	
 	nextQuote();
 }
 
