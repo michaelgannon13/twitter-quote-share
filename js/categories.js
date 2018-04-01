@@ -147,5 +147,20 @@ var motivation = [
       author: "Dalai Lama",
       quote: "'Love and compassion are necessities, not luxuries. Without them humanity cannot survive'",
       authorImg: "img/Dalai-Lama.jpg"
+    },    
+    {
+      author: "Confucius",
+      quote: "'Wisdom, compassion, and courage are the three universally recognized moral qualities of men'",
+      authorImg: "img/Confucius.jpg"
+    },    
+    {
+      author: "Lao Tzu",
+      quote: "'I have just three things to teach: simplicity, patience, compassion. These three are your greatest treasures'",
+      authorImg: "img/lao-tzu.jpg"
+    },    
+    {
+      author: "Thich Nhat Hanh",
+      quote: "'Let us fill our hearts with our own compassion - towards ourselves and towards all living beings'",
+      authorImg: "img/Thich-Nhat-Hanh.jpg"
     }
   ]
