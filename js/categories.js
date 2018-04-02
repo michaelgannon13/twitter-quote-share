@@ -164,3 +164,22 @@ var motivation = [
       authorImg: "img/Thich-Nhat-Hanh.jpg"
     }
   ]
+
+  var joy = [
+    {
+      author: "Dr. Seuss",
+      quote: "'Don't cry because it's over, smile because it happened'",
+      authorImg: "img/dr-seuss.jpg"
+    },    
+    {
+      author: "Nicolas Chamfort",
+      quote: "'The most wasted of all days is one without laughter'",
+      authorImg: "img/Nicolas-Chamfort.jpg"
+    },    
+    {
+      author: "Dale Carnegie",
+      quote: "'Happiness doesn't depend on any external conditions, it is governed by our mental attitude'",
+      authorImg: "img/Dale-Carnegie.jpg"
+    },
+  ]
+  
