@@ -72,6 +72,12 @@ function loadCompassion() {
 	nextQuote();
 }
 
+function loadJoy() {
+	currentPerson = joy;
+	resetCounter();	
+	nextQuote();
+}
+
 
 function updateURL() { 
 	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;

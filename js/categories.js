@@ -164,3 +164,11 @@ var motivation = [
       authorImg: "img/Thich-Nhat-Hanh.jpg"
     }
   ]
+
+  var joy = [
+    {
+      author: "Dr. Seuss",
+      quote: "'Don't cry because it's over, smile because it happened'",
+      authorImg: "img/dr-seuss.jpg"
+    }
+  ]
