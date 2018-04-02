@@ -6,17 +6,17 @@ var quoteHolder;
 var authorHolder;
 var createTweetBtn = document.createElement('a');
 var tweetIcon = document.createElement('i');
-var linkText = document.createTextNode("Tweet");
+var linkText = document.createTextNode(" Tweet");
 
 function onload() {
 	counter = 0;
 	currentPerson = motivation;
 	nextQuote();
 	createTweetBtn.className = "twitter-share-button";
+	tweetIcon.className = "fa fa-twitter";
 	createTweetBtn.appendChild(linkText);
-	createTweetBtn.appendChild(tweetIcon);    
+	createTweetBtn.prepend(tweetIcon);    
 	document.getElementById("tweet-button-container").appendChild(createTweetBtn);
-	document.getElementById("tweet-button-container").appendChild(tweetIcon);
 }
 
 window.onkeydown = function (e) {
