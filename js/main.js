@@ -30,18 +30,6 @@ function resetCounter() {
 	counter = 0;
 }
 
-function fadeIn() {
-	authorImage.fadeTo('slow', 0.2);
-	authorQuote.fadeTo('slow', 1);
-	authorName.fadeTo('slow', 1);
-}
-
-function fadeOut() {
-	authorImage.css('opacity', 0);
-	authorQuote.css('opacity', 0);
-	authorName.css('opacity', 0);
-}
-
 function loadMotivation() {
 	currentPerson = motivation;
 	resetCounter();
@@ -74,7 +62,7 @@ function loadCompassion() {
 
 function loadJoy() {
 	currentPerson = joy;
-	resetCounter();	
+	resetCounter();
 	nextQuote();
 }
 
@@ -83,22 +71,30 @@ function updateURL() {
 	createTweetBtn.href = "https://twitter.com/intent/tweet?text=" + quoteHolder + " - " + authorHolder;
 }
 
+function fadeIn() {
+	authorImage.fadeTo('slow', 0.2);
+	authorQuote.fadeTo('slow', 1);
+	authorName.fadeTo('slow', 1);
+}
+
+function fadeOut() {
+	authorImage.css('opacity', 0);
+	authorQuote.css('opacity', 0);
+	authorName.css('opacity', 0);
+}
+
 function nextQuote() {
 	if (counter !== currentPerson.length) {
 		fadeOut();
 		authorName.text(currentPerson[counter].author);
 		authorQuote.text(currentPerson[counter].quote);
 		authorImage.attr("src", currentPerson[counter].authorImg);
-
+		fadeIn();
+		
 		authorHolder = currentPerson[counter].author;
 		quoteHolder = currentPerson[counter].quote;
-
-		console.log("authorHolder = " + authorHolder);
-		console.log("quoteHolder = " + quoteHolder);
-
 		updateURL();
 
-		fadeIn();
 		counter++;
 	} else {
 		counter = 0;
